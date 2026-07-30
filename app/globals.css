@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --cream: #FFFFFF;
+  --cream-dark: #F7F8F6;
+  --olive: #1B4D3E;
+  --olive-light: #2D6A55;
+  --near-black: #14342A;
+  --white: #FFFFFF;
+  --text-primary: #14342A;
+  --text-muted: #6B7280;
+  --border: #E5E7EB;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --section-padding: 100px 0;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+a {
+  color: inherit;
+}
+
+/* Mobile nav toggle — hidden on desktop by default, shown only under 768px below */
+.mobile-menu-button {
+  display: none;
+}
+
+/* ── Grid classes referenced by page components ──────────
+   These carry the *desktop* layout. Inline styles in the
+   components should NOT redeclare gridTemplateColumns/gap
+   for these — the class is the single source of truth so
+   the mobile media queries below can actually override it. */
+.hero-grid {
+  display: grid;
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.detail-grid {
+  display: grid;
+}
+
+.four-col {
+  display: grid;
+}
+
+.footer-grid {
+  display: grid;
+}
+
+/* Contact page: form column + fixed-width sidebar */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+}
+
+/* Agents page: 2-up card grid, and photo/bio split inside each card */
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.agent-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── Mobile Responsive ────────────────────────────────── */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+  }
+
+  /* Navbar — hide desktop links, show toggle */
+  nav .desktop-links {
+    display: none !important;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  /* Hero grid → single column */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Properties grid → single column */
+  .properties-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Detail page grid → single column */
+  .detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 4-column grids → 2 columns */
+  .four-col {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Footer grid → single column */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 4-column footer grid → 2 columns */
+  footer > div {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Contact page grid → single column, tighter gap */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Agents grid → single column */
+  .agents-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Agent card photo/bio split → stacked */
+  .agent-card-inner {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Section padding */
+  :root {
+    --section-padding: 60px 0;
+  }
+}
+
+/* Loading shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .four-col {
+    grid-template-columns: 1fr !important;
+  }
+}
