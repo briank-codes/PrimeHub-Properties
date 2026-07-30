@@ -1,0 +1,32 @@
+export const soldProperties = [
+  {
+    id: 'sold-001',
+    title: '2 Bedroom Apartment, Westlands',
+    soldPrice: 12000000,
+    soldDate: '2024-06-15',
+    originalPrice: 11000000,
+    location: 'Westlands, Nairobi',
+    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop',
+    timeOnMarket: '3 months',
+  },
+  {
+    id: 'sold-002',
+    title: 'Prime Plot, Karen',
+    soldPrice: 8500000,
+    soldDate: '2024-05-20',
+    originalPrice: 8000000,
+    location: 'Karen, Nairobi',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop',
+    timeOnMarket: '2 months',
+  },
+  {
+    id: 'sold-003',
+    title: '4 Bedroom Home, Lavington',
+    soldPrice: 45000000,
+    soldDate: '2024-04-10',
+    originalPrice: 42000000,
+    location: 'Lavington, Nairobi',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop',
+    timeOnMarket: '4 months',
+  },
+]

@@ -1,0 +1,118 @@
+export const neighborhoodGuides = {
+  'Nanyuki': {
+    overview: 'Nanyuki is a rapidly growing town at the foot of Mount Kenya, known for its cool climate and strategic location.',
+    highlights: ['Cool climate year-round', 'Proximity to wildlife conservancies', 'Growing expat community', 'Good schools and hospitals'],
+    propertyTypes: ['Holiday homes', 'Residential plots', 'Farm land', 'Commercial properties'],
+    averagePrices: {
+      plot: 'KSh 4.5M per 50x100',
+      home: 'KSh 8.5M average',
+      apartment: 'KSh 35K/month rent',
+    },
+    infrastructure: {
+      roads: 'Tarmac A2 highway, well-maintained local roads',
+      utilities: 'Reliable electricity and water supply',
+      internet: 'Fiber optic connectivity available',
+      healthcare: 'Nanyuki Teaching and Referral Hospital, several private clinics',
+      education: 'Nanyuki Primary, several private schools, nearby international schools',
+    },
+    lifestyle: {
+      climate: 'Cool and pleasant, 1800m altitude',
+      activities: ['Wildlife viewing', 'Hiking and nature walks', 'Golf at Mt Kenya Safari Club', 'Cultural experiences'],
+      safety: 'Low crime rate, tight-knit community',
+      community: 'Mix of locals and expats, welcoming atmosphere',
+    },
+    investment: {
+      roi: '15-20% annual appreciation',
+      rentalYield: '8-12% for holiday rentals',
+      demand: 'High demand for holiday homes and investment properties',
+      bestFor: ['Holiday homes', 'Long-term investment', 'Retirement homes'],
+    },
+  },
+  'Kiambu': {
+    overview: 'Kiambu County is a premier residential area just outside Nairobi, known for its upscale neighborhoods and rapid development.',
+    highlights: ['Close proximity to Nairobi CBD', 'Excellent infrastructure', 'High-end residential areas', 'Strong appreciation rates'],
+    propertyTypes: ['Luxury homes', 'Apartments', 'Gated communities', 'Prime plots'],
+    averagePrices: {
+      plot: 'KSh 3.2M per 50x100',
+      home: 'KSh 12M average',
+      apartment: 'KSh 45K/month rent',
+    },
+    infrastructure: {
+      roads: 'Excellent tarmac roads, Kiambu Road to Nairobi',
+      utilities: 'Reliable utilities throughout',
+      internet: 'High-speed fiber available',
+      healthcare: 'Several hospitals and medical centers',
+      education: 'Top-tier schools, international options',
+    },
+    lifestyle: {
+      climate: 'Mild highland climate, green surroundings',
+      activities: ['Shopping malls', 'Restaurants and entertainment', 'Golf courses', 'Social clubs'],
+      safety: 'Very safe, gated communities available',
+      community: 'Upscale, family-friendly neighborhoods',
+    },
+    investment: {
+      roi: '18-25% annual appreciation',
+      rentalYield: '6-10% for residential properties',
+      demand: 'Very high demand from Nairobi professionals',
+      bestFor: ['Family homes', 'Investment properties', 'Rental income'],
+    },
+  },
+  'Nakuru': {
+    overview: 'Nakuru is Kenya\'s fourth-largest city and a rapidly growing urban center with affordable property options.',
+    highlights: ['Affordable property prices', 'Strong infrastructure', 'Lake Nakuru proximity', 'Growing industrial base'],
+    propertyTypes: ['Family homes', 'Apartments', 'Commercial properties', 'Plots'],
+    averagePrices: {
+      plot: 'KSh 2.8M per 50x100',
+      home: 'KSh 6M average',
+      apartment: 'KSh 25K/month rent',
+    },
+    infrastructure: {
+      roads: 'A104 highway, good internal road network',
+      utilities: 'Reliable services in most areas',
+      internet: 'Growing fiber coverage',
+      healthcare: 'Nakuru Level 5 Hospital, several private facilities',
+      education: 'Nakuru Boys/Girls High, several universities',
+    },
+    lifestyle: {
+      climate: 'Warm, dry, lake region atmosphere',
+      activities: ['Lake Nakuru visits', 'Hyrax Hill', 'Menengai Crater', 'Cultural festivals'],
+      safety: 'Generally safe, improving security',
+      community: 'Diverse, growing city with opportunities',
+    },
+    investment: {
+      roi: '12-18% annual appreciation',
+      rentalYield: '7-11% for residential properties',
+      demand: 'High demand from middle-class families',
+      bestFor: ['Family homes', 'First-time buyers', 'Rental investments'],
+    },
+  },
+  'Mombasa': {
+    overview: 'Mombasa is Kenya\'s coastal city and tourism hub, offering beach properties and high rental returns.',
+    highlights: ['Beach access', 'Tourism opportunities', 'High rental yields', 'International airport'],
+    propertyTypes: ['Beach villas', 'Apartments', 'Hotel investments', 'Beachfront plots'],
+    averagePrices: {
+      plot: 'KSh 15M per 50x100 beachfront',
+      home: 'KSh 25M average',
+      apartment: 'KSh 60K/month rent',
+    },
+    infrastructure: {
+      roads: 'Mombasa-Nairobi highway, SGR terminus',
+      utilities: 'Generally reliable, some seasonal issues',
+      internet: 'Good connectivity in urban areas',
+      healthcare: 'Mombasa Hospital, several private clinics',
+      education: 'International schools, university options',
+    },
+    lifestyle: {
+      climate: 'Tropical, warm year-round, ocean breeze',
+      activities: ['Beach activities', 'Water sports', 'Historical sites', 'Nightlife'],
+      safety: 'Variable, gated communities recommended',
+      community: 'Tourism-focused, multicultural',
+    },
+    investment: {
+      roi: '20-30% annual appreciation for prime locations',
+      rentalYield: '10-15% for holiday rentals',
+      demand: 'High demand from tourists and investors',
+      bestFor: ['Holiday rentals', 'Tourism investments', 'Beach properties'],
+    },
+  },
+}
