@@ -5,6 +5,11 @@ import Footer from '@/components/ui/Footer'
 import StructuredData from '@/components/seo/StructuredData'
 import { FavoritesProvider } from '@/contexts/FavoritesContext'
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata = {
   title: 'PrimeHub — Kenya Real Estate | Land & Homes for Sale',
   description: 'Find land and homes across Kenya in the right location at the right price. Properties in Nanyuki, Kiambu, Nakuru, Mombasa, and more.',

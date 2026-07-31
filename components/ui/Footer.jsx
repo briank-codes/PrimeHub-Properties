@@ -18,11 +18,10 @@ export default function Footer() {
       color: 'var(--cream)',
       padding: '60px 24px 30px',
     }}>
-      <div style={{
+      <div className="footer-main-grid" style={{
         maxWidth: 'var(--container-width)',
         margin: '0 auto',
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
         gap: '48px',
         paddingBottom: '40px',
         borderBottom: '1px solid rgba(255,255,255,0.1)',

@@ -76,6 +76,13 @@ a {
   color: inherit;
 }
 
+/* Anchor-linked sections (e.g. #locations, #contact) need breathing room
+   so the sticky navbar (70px tall) doesn't overlap their top content when
+   the browser scrolls them into view. */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
 /* Mobile nav toggle — hidden on desktop by default, shown only under 768px below */
 .mobile-menu-button {
   display: none;
@@ -106,6 +113,13 @@ a {
 
 .footer-grid {
   display: grid;
+}
+
+/* Footer's main 4-column grid — has its own class so mobile
+   breakpoints below can override cleanly without fighting
+   inline styles or relying on generic tag selectors. */
+.footer-main-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* Contact page: form column + fixed-width sidebar */
@@ -177,9 +191,9 @@ a {
     grid-template-columns: 1fr !important;
   }
 
-  /* 4-column footer grid → 2 columns */
-  footer > div {
-    grid-template-columns: 1fr 1fr !important;
+  /* Footer's main 4-column grid → 2 columns on tablet/phone */
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   /* Contact page grid → single column, tighter gap */
@@ -220,6 +234,11 @@ a {
   }
 
   .four-col {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer's main grid → single column on small phones */
+  .footer-main-grid {
     grid-template-columns: 1fr !important;
   }
 }
