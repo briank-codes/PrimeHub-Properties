@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import FallbackImage from '@/components/ui/FallbackImage'
 import { properties } from '@/data/properties'
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -36,7 +37,7 @@ function PropertyCard({ property }) {
     }}>
       {/* Image, badge, price overlay */}
       <div style={{ position: 'relative', aspectRatio: '4 / 3', width: '100%', background: 'var(--cream-dark)', overflow: 'hidden' }}>
-        <img
+        <FallbackImage
           src={property.image}
           alt={property.title}
           loading="lazy"

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import FallbackImage from '@/components/ui/FallbackImage'
 import CounterStats from '@/components/ui/CounterStats'
 import MarketStats from '@/components/ui/marketing/MarketStats'
 
@@ -152,12 +152,11 @@ export default function AboutPage() {
                 border: '1px solid var(--border)',
                 padding: '32px 24px',
               }}>
-                <div style={{ position: 'relative', width: '48px', height: '48px', marginBottom: '16px' }}>
-                  <Image 
-                    src={value.icon} 
-                    alt={value.title} 
-                    fill 
-                    style={{ borderRadius: '50%', objectFit: 'cover' }} 
+                <div style={{ width: '48px', height: '48px', marginBottom: '16px' }}>
+                  <FallbackImage
+                    src={value.icon}
+                    alt={value.title}
+                    style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }}
                   />
                 </div>
                 <h3 style={{ marginBottom: '12px', fontSize: '1.1rem' }}>{value.title}</h3>
@@ -213,12 +212,11 @@ export default function AboutPage() {
               padding: '48px',
               textAlign: 'center',
             }}>
-              <div style={{ position: 'relative', width: '80px', height: '80px', margin: '0 auto 16px' }}>
-                <Image 
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=150&h=150&fit=crop" 
-                  alt="Kenya Map snippet" 
-                  fill 
-                  style={{ borderRadius: '8px', objectFit: 'cover' }} 
+              <div style={{ width: '80px', height: '80px', margin: '0 auto 16px' }}>
+                <FallbackImage
+                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=150&h=150&fit=crop"
+                  alt="Kenya Map snippet"
+                  style={{ width: '100%', height: '100%', borderRadius: '8px', objectFit: 'cover' }}
                 />
               </div>
               <p style={{
@@ -264,12 +262,13 @@ export default function AboutPage() {
                 padding: '32px 24px',
                 textAlign: 'center',
               }}>
-                <div style={{ position: 'relative', width: '64px', height: '64px', margin: '0 auto 16px' }}>
-                  <Image 
-                    src={member.image} 
+                <div style={{ width: '64px', height: '64px', margin: '0 auto 16px' }}>
+                  <FallbackImage
+                    src={member.image}
                     alt={member.name}
-                    fill
                     style={{
+                      width: '100%',
+                      height: '100%',
                       borderRadius: '50%',
                       objectFit: 'cover',
                     }}

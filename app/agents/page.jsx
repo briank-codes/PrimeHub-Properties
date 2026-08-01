@@ -1,4 +1,5 @@
 import { agents } from '@/data/agents'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 export default function AgentsPage() {
   return (
@@ -44,7 +45,7 @@ export default function AgentsPage() {
                 }}>
                   {/* Agent Photo */}
                   <div>
-                    <img
+                    <FallbackImage
                       src={agent.image}
                       alt={agent.name}
                       style={{

@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 export default function ImageGallery({ images, title }) {
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -18,7 +19,7 @@ export default function ImageGallery({ images, title }) {
         overflow: 'hidden',
         marginBottom: '12px',
       }}>
-        <img
+        <FallbackImage
           src={images[selectedIndex]}
           alt={`${title} - Image ${selectedIndex + 1}`}
           style={{
@@ -65,7 +66,7 @@ export default function ImageGallery({ images, title }) {
                   borderRadius: '4px',
                 }}
               >
-                <img
+                <FallbackImage
                   src={image}
                   alt={`${title} - Thumbnail ${index + 1}`}
                   style={{

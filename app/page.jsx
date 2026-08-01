@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { properties, locations } from '@/data/properties'
 import CounterStats from '@/components/ui/CounterStats'
 import FavoriteButton from '@/components/ui/FavoriteButton'
+import FallbackImage from '@/components/ui/FallbackImage'
 import LeadMagnet from '@/components/ui/marketing/LeadMagnet'
 import VideoTestimonials from '@/components/ui/marketing/VideoTestimonials'
 import SoldProperties from '@/components/ui/marketing/SoldProperties'
@@ -99,7 +100,7 @@ function PropertyCard({ property }) {
         overflow: 'hidden',
       }}>
         {property.image ? (
-          <img
+          <FallbackImage
             src={property.image}
             alt={property.title}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -325,7 +326,7 @@ export default function Home() {
                 overflow: 'hidden',
                 position: 'relative',
               }}>
-                <img
+                <FallbackImage
                   src="/images/properties/mombasa-villa.png"
                   alt="Featured property"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -524,7 +525,7 @@ export default function Home() {
                   justifyContent: 'center',
                   margin: '0 auto 14px',
                 }}>
-                  <img src={reason.icon} alt={reason.title} style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
+                  <FallbackImage src={reason.icon} alt={reason.title} style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1rem', marginBottom: '8px', color: 'var(--near-black)' }}>
                   {reason.title}

@@ -36,8 +36,8 @@ function PropertyCard({ property }) {
         overflow: 'hidden',
       }}>
         {property.image ? (
-          <img 
-            src={property.image} 
+          <FallbackImage
+            src={property.image}
             alt={property.title}
             style={{
               width: '100%',

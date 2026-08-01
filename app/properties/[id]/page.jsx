@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { properties } from '@/data/properties'
 import FavoriteButton from '@/components/ui/FavoriteButton'
+import FallbackImage from '@/components/ui/FallbackImage'
 import ImageGallery from '@/components/properties/ImageGallery'
 import MortgageCalculator from '@/components/properties/MortgageCalculator'
 import PropertyMapClient from '@/components/properties/PropertyMapClient'
@@ -36,7 +37,7 @@ function MiniPropertyCard({ property }) {
           overflow: 'hidden',
         }}>
           {property.image && (
-            <img src={property.image} alt={property.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <FallbackImage src={property.image} alt={property.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           )}
         </div>
         <div style={{ padding: '16px' }}>

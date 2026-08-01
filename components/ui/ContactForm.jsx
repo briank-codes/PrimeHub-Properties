@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 const initialFormData = {
   name: '',
@@ -83,7 +84,7 @@ export default function ContactForm() {
         padding: '48px',
         textAlign: 'center',
       }}>
-        <img
+        <FallbackImage
           src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=100&h=100&fit=crop"
           alt="Success"
           style={{ width: '64px', height: '64px', marginBottom: '16px', borderRadius: '50%' }}

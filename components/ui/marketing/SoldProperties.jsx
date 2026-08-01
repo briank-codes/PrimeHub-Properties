@@ -1,5 +1,6 @@
 "use client"
 import { soldProperties } from '@/data/soldProperties'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 export default function SoldProperties() {
   return (
@@ -10,7 +11,7 @@ export default function SoldProperties() {
           {soldProperties.map(p => (
             <div key={p.id} style={{ background: 'var(--white)', border: '1px solid var(--border)', overflow: 'hidden' }}>
               <div style={{ height: '140px', overflow: 'hidden' }}>
-                <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <FallbackImage src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '12px' }}>
                 <div style={{ fontWeight: 700 }}>{p.title}</div>

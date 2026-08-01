@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ui/ContactForm'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 export const metadata = {
   title: 'PrimeHub — Contact',
@@ -67,7 +68,7 @@ export default function ContactPage() {
               padding: '32px',
               color: 'white',
             }}>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '40px', height: '40px', marginBottom: '12px' }} />
+              <FallbackImage src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '40px', height: '40px', marginBottom: '12px' }} />
               <h3 style={{ color: 'white', marginBottom: '8px', fontSize: '1.2rem' }}>
                 Fastest response on WhatsApp
               </h3>

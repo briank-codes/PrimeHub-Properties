@@ -1,5 +1,6 @@
 import { blogPosts } from '@/data/blogPosts'
 import Link from 'next/link'
+import FallbackImage from '@/components/ui/FallbackImage'
 
 export default function BlogPage() {
   const categories = [...new Set(blogPosts.map(function(post) { return post.category }))]
@@ -53,7 +54,7 @@ export default function BlogPage() {
                       overflow: 'hidden',
                       transition: 'transform 0.2s',
                     }}>
-                      <img
+                      <FallbackImage
                         src={post.image}
                         alt={post.title}
                         style={{
