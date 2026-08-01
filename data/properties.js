@@ -77,9 +77,9 @@ export const properties = [
     location: { area: "Eldoret", county: "Uasin Gishu", coordinates: { lat: 0.5143, lng: 35.2698 } },
     specs: { bedrooms: 3, bathrooms: 2, size: 140 },
     featured: true,
-    image: "/images/properties/eldoret-apartment.png",
+    image: "/images/properties/eldoret3-bedroom.jpeg",
     images: [
-      "/images/properties/eldoret-apartment.png",
+      "/images/properties/eldoret3-bedroom.jpeg",
     ],
     whatsapp: "254712345678",
     tags: ["Near university", "Good security", "Parking"],
